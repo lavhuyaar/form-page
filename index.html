@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Page</title>
     <link href="style.css" rel="stylesheet" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="left-cover">
@@ -35,6 +36,7 @@
         <div class="text-three">You <em>know</em> you want to.</div>
       </div>
       <div class="form-box">
+        <form action="#" method="post">
         <h3>Let's do this!</h3>
         <div class="form-column">
           <div class="form-info">
@@ -92,6 +94,8 @@
               name="pass_two"
               minlength="8"
             />
+            <div class="error">Password did not match.</div>
+        </form>
           </div>
         </div>
       </div>
