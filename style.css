@@ -8,6 +8,10 @@
     src: url(material/Norse-Bold.otf);
 }
 
+:root {
+    --drop-shadow: drop-shadow(rgb(133, 132, 132) 2px 2px 2px);
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -23,7 +27,7 @@ body {
 
 .black-box {
     width: 25%;
-    height: 20vh;
+    height: 17vh;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
     top: 20%;
@@ -49,4 +53,134 @@ body {
     color: rgb(217, 213, 213);
     font-family: sans-serif;
     font-size: 0.8rem;
+}
+
+.right-page {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+}
+
+.first-text {
+    width: 80%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 50px;
+}
+
+.text-one, .text-two, .text-three {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.text-three {
+    padding-top: 40px;
+}
+
+.form-box {
+    width: 80%;
+    height: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.form-column {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+label {
+    color: rgb(66, 65, 65);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+input {
+    width: 300px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px #E5E7EB solid;
+    padding-left: 15px;
+    font-weight: 600;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px red solid;
+}
+
+input:focus {
+    border: 1px solid rgb(22, 113, 205);
+    filter: var(--drop-shadow);
+}
+
+.bottom-box {
+    width: 75%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+button {
+    background-color: #596D48;
+    width: 280px;
+    height: 60px;
+    color: rgb(228, 228, 228);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    margin-top: 50px;
+    cursor: pointer;
+    filter: var(--drop-shadow);
+}
+
+button:hover {
+    background-color: #3a482d;
+} 
+
+.bottom-box > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: 1.150rem;
+    color: rgb(49, 49, 49);;
+}
+
+.bottom-box > p > a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 740;
+}
+
+.border {
+    filter: var(--drop-shadow);
+    width: 100%;
+    height: 1px;
+    background-color: rgb(226, 224, 224);
 }

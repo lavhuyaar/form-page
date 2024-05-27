@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Page</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="left-cover">
-        <div class="black-box"><img class="logo" src="material/odin-lined.png" width="100"><span class="logo-text">Odin</span>
-        </div>
-        <p class="cover-src">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"target="_main"> Halie West </a>on <a href="https://unsplash.com/"target="_main">Unsplash</a></p>
+      <div class="black-box">
+        <img class="logo" src="material/odin-lined.png" width="100" /><span
+          class="logo-text"
+          >Odin</span
+        >
+      </div>
+      <p class="cover-src">
+        Photo by
+        <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+          target="_main"
+        >
+          Halie West </a
+        >on <a href="https://unsplash.com/" target="_main">Unsplash</a>
+      </p>
     </div>
-</body>
+
+    <div class="right-page">
+      <div class="first-text">
+        <div class="text-one">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </div>
+        <div class="text-two">Sign up <em>now</em> to get started.</div>
+        <div class="text-three">You <em>know</em> you want to.</div>
+      </div>
+      <div class="form-box">
+        <h3>Let's do this!</h3>
+        <div class="form-column">
+          <div class="form-info">
+            <label for="first_name">FIRST NAME</label>
+            <input
+              type="text"
+              minlength="3"
+              id="first_name"
+              name="name"
+              placeholder="Thor"
+            />
+          </div>
+          <div class="form-info">
+            <label for="last_name">LAST NAME</label>
+            <input
+              type="text"
+              minlength="3"
+              id="last_name"
+              name="surname"
+              placeholder="Odinson"
+            />
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-info">
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              id="email"
+              name="mail"
+              placeholder="xyz@gmail.com"
+            />
+          </div>
+          <div class="form-info">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input
+              type="text"
+              minlength="10"
+              id="phone_number"
+              name="contact"
+              placeholder="+91"
+            />
+          </div>
+        </div>
+        <div class="form-column">
+          <div class="form-info">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="pass" minlength="8" />
+          </div>
+          <div class="form-info">
+            <label for="password_two">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="password_two"
+              name="pass_two"
+              minlength="8"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="bottom-box">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </body>
 </html>
